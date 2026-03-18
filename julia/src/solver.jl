@@ -1,12 +1,14 @@
 # solver.jl
 # Основная программа для решения задач ЛП алгоритмом Кармаркара
 
+# Добавляем каталог src в путь поиска
+push!(LOAD_PATH, @__DIR__)
+
+# Импортируем модуль KarmarkarLP
+using KarmarkarLP
+
 using Printf
 using LinearAlgebra
-
-# Включаем модуль KarmarkarLP (предполагается, что он в том же каталоге)
-include("karmarkar.jl")
-include("io.jl")
 
 """
     print_usage(program_name)
